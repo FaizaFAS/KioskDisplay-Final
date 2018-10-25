@@ -49,6 +49,7 @@ Partial Class MenuSelect
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -140,14 +141,37 @@ Partial Class MenuSelect
         Me.Button98 = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -156,6 +180,16 @@ Partial Class MenuSelect
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -164,7 +198,7 @@ Partial Class MenuSelect
         Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(4, 9)
+        Me.Label1.Location = New System.Drawing.Point(4, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(816, 56)
         Me.Label1.TabIndex = 0
@@ -173,16 +207,16 @@ Partial Class MenuSelect
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox1.Location = New System.Drawing.Point(-3, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(-3, -12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1085, 72)
+        Me.PictureBox1.Size = New System.Drawing.Size(1085, 93)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 323)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 335)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(1085, 72)
         Me.PictureBox2.TabIndex = 2
@@ -194,7 +228,7 @@ Partial Class MenuSelect
         Me.Label2.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label2.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(4, 653)
+        Me.Label2.Location = New System.Drawing.Point(4, 670)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(419, 56)
         Me.Label2.TabIndex = 3
@@ -203,7 +237,7 @@ Partial Class MenuSelect
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 644)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 661)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(1085, 72)
         Me.PictureBox3.TabIndex = 4
@@ -215,7 +249,7 @@ Partial Class MenuSelect
         Me.Label3.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label3.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(6, 963)
+        Me.Label3.Location = New System.Drawing.Point(6, 993)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(427, 56)
         Me.Label3.TabIndex = 5
@@ -227,7 +261,7 @@ Partial Class MenuSelect
         Me.Label4.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label4.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(4, 1270)
+        Me.Label4.Location = New System.Drawing.Point(4, 1312)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(238, 56)
         Me.Label4.TabIndex = 6
@@ -236,7 +270,7 @@ Partial Class MenuSelect
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 953)
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 983)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(1085, 72)
         Me.PictureBox4.TabIndex = 7
@@ -245,7 +279,7 @@ Partial Class MenuSelect
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox5.Location = New System.Drawing.Point(0, 1572)
+        Me.PictureBox5.Location = New System.Drawing.Point(0, 1623)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(1085, 85)
         Me.PictureBox5.TabIndex = 8
@@ -270,9 +304,10 @@ Partial Class MenuSelect
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Location = New System.Drawing.Point(7, 83)
+        Me.Panel1.Location = New System.Drawing.Point(7, 92)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1070, 223)
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 20)
+        Me.Panel1.Size = New System.Drawing.Size(1070, 234)
         Me.Panel1.TabIndex = 32
         '
         'Button16
@@ -473,9 +508,8 @@ Partial Class MenuSelect
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame
         Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(0, 3)
@@ -485,10 +519,18 @@ Partial Class MenuSelect
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'PictureBox13
+        '
+        Me.PictureBox13.Location = New System.Drawing.Point(-13, 309)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox13.TabIndex = 31
+        Me.PictureBox13.TabStop = False
+        '
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 1263)
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 1305)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(1085, 72)
         Me.PictureBox6.TabIndex = 34
@@ -500,7 +542,7 @@ Partial Class MenuSelect
         Me.Label5.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label5.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(4, 331)
+        Me.Label5.Location = New System.Drawing.Point(4, 343)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(409, 56)
         Me.Label5.TabIndex = 35
@@ -525,9 +567,9 @@ Partial Class MenuSelect
         Me.Panel2.Controls.Add(Me.Button30)
         Me.Panel2.Controls.Add(Me.Button31)
         Me.Panel2.Controls.Add(Me.Button32)
-        Me.Panel2.Location = New System.Drawing.Point(7, 407)
+        Me.Panel2.Location = New System.Drawing.Point(7, 419)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1070, 223)
+        Me.Panel2.Size = New System.Drawing.Size(1070, 234)
         Me.Panel2.TabIndex = 36
         '
         'Button17
@@ -757,9 +799,9 @@ Partial Class MenuSelect
         Me.Panel3.Controls.Add(Me.Button46)
         Me.Panel3.Controls.Add(Me.Button47)
         Me.Panel3.Controls.Add(Me.Button48)
-        Me.Panel3.Location = New System.Drawing.Point(7, 722)
+        Me.Panel3.Location = New System.Drawing.Point(7, 739)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1070, 223)
+        Me.Panel3.Size = New System.Drawing.Size(1070, 234)
         Me.Panel3.TabIndex = 37
         '
         'Button33
@@ -994,9 +1036,9 @@ Partial Class MenuSelect
         Me.Panel4.Controls.Add(Me.Button62)
         Me.Panel4.Controls.Add(Me.Button63)
         Me.Panel4.Controls.Add(Me.Button64)
-        Me.Panel4.Location = New System.Drawing.Point(7, 1031)
+        Me.Panel4.Location = New System.Drawing.Point(7, 1061)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1070, 223)
+        Me.Panel4.Size = New System.Drawing.Size(1070, 234)
         Me.Panel4.TabIndex = 38
         '
         'Button49
@@ -1226,9 +1268,9 @@ Partial Class MenuSelect
         Me.Panel5.Controls.Add(Me.Button65)
         Me.Panel5.Controls.Add(Me.Button66)
         Me.Panel5.Controls.Add(Me.Button67)
-        Me.Panel5.Location = New System.Drawing.Point(7, 1341)
+        Me.Panel5.Location = New System.Drawing.Point(7, 1377)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1070, 223)
+        Me.Panel5.Size = New System.Drawing.Size(1070, 234)
         Me.Panel5.TabIndex = 39
         '
         'Button80
@@ -1458,9 +1500,9 @@ Partial Class MenuSelect
         Me.Panel6.Controls.Add(Me.Button94)
         Me.Panel6.Controls.Add(Me.Button95)
         Me.Panel6.Controls.Add(Me.Button96)
-        Me.Panel6.Location = New System.Drawing.Point(7, 1670)
+        Me.Panel6.Location = New System.Drawing.Point(7, 1720)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(798, 180)
+        Me.Panel6.Size = New System.Drawing.Size(798, 172)
         Me.Panel6.TabIndex = 40
         '
         'Button92
@@ -1689,7 +1731,7 @@ Partial Class MenuSelect
         Me.Button97.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
         Me.Button97.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button97.ForeColor = System.Drawing.Color.White
-        Me.Button97.Location = New System.Drawing.Point(811, 1673)
+        Me.Button97.Location = New System.Drawing.Point(811, 1723)
         Me.Button97.Name = "Button97"
         Me.Button97.Size = New System.Drawing.Size(266, 70)
         Me.Button97.TabIndex = 82
@@ -1703,7 +1745,7 @@ Partial Class MenuSelect
         Me.Button98.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
         Me.Button98.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button98.ForeColor = System.Drawing.Color.White
-        Me.Button98.Location = New System.Drawing.Point(811, 1749)
+        Me.Button98.Location = New System.Drawing.Point(811, 1799)
         Me.Button98.Name = "Button98"
         Me.Button98.Size = New System.Drawing.Size(266, 70)
         Me.Button98.TabIndex = 83
@@ -1714,20 +1756,64 @@ Partial Class MenuSelect
         '
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.Panel7.Controls.Add(Me.PictureBox7)
+        Me.Panel7.Controls.Add(Me.PictureBox9)
+        Me.Panel7.Controls.Add(Me.PictureBox10)
+        Me.Panel7.Controls.Add(Me.PictureBox11)
+        Me.Panel7.Controls.Add(Me.PictureBox8)
         Me.Panel7.ForeColor = System.Drawing.Color.Transparent
-        Me.Panel7.Location = New System.Drawing.Point(964, 19)
+        Me.Panel7.Location = New System.Drawing.Point(835, 25)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(100, 40)
         Me.Panel7.TabIndex = 84
         '
         'PictureBox7
         '
-        Me.PictureBox7.BackgroundImage = CType(resources.GetObject("PictureBox7.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
         Me.PictureBox7.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox7.TabIndex = 0
         Me.PictureBox7.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox9.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox9.Location = New System.Drawing.Point(0, 5)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(5, 30)
+        Me.PictureBox9.TabIndex = 2
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox10.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PictureBox10.Location = New System.Drawing.Point(0, 35)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(95, 5)
+        Me.PictureBox10.TabIndex = 3
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox11.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(95, 5)
+        Me.PictureBox11.TabIndex = 4
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox8.Location = New System.Drawing.Point(95, 0)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(5, 40)
+        Me.PictureBox8.TabIndex = 1
+        Me.PictureBox8.TabStop = False
         '
         'Timer1
         '
@@ -1737,6 +1823,200 @@ Partial Class MenuSelect
         '
         Me.Timer2.Interval = 1
         '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox12.BackgroundImage = CType(resources.GetObject("PictureBox12.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox12.Location = New System.Drawing.Point(7, 1636)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(65, 57)
+        Me.PictureBox12.TabIndex = 85
+        Me.PictureBox12.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(1016, 342)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 56)
+        Me.Label6.TabIndex = 86
+        Me.Label6.Text = ">"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label8.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(960, 342)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(50, 56)
+        Me.Label8.TabIndex = 88
+        Me.Label8.Text = "<"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label12.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(1016, 12)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(50, 56)
+        Me.Label12.TabIndex = 92
+        Me.Label12.Text = ">"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label13.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(960, 12)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(50, 56)
+        Me.Label13.TabIndex = 93
+        Me.Label13.Text = "<"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label7.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(1016, 668)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(50, 56)
+        Me.Label7.TabIndex = 97
+        Me.Label7.Text = ">"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label9.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(960, 668)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 56)
+        Me.Label9.TabIndex = 98
+        Me.Label9.Text = "<"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label10.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(960, 991)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(50, 56)
+        Me.Label10.TabIndex = 99
+        Me.Label10.Text = "<"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label11.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(1016, 991)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(50, 56)
+        Me.Label11.TabIndex = 100
+        Me.Label11.Text = ">"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label14.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(1016, 1311)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 56)
+        Me.Label14.TabIndex = 101
+        Me.Label14.Text = ">"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label15.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(960, 1311)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(50, 56)
+        Me.Label15.TabIndex = 102
+        Me.Label15.Text = "<"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label16.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(1016, 1635)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(50, 56)
+        Me.Label16.TabIndex = 103
+        Me.Label16.Text = ">"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label17.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(960, 1635)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(50, 56)
+        Me.Label17.TabIndex = 104
+        Me.Label17.Text = "<"
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Location = New System.Drawing.Point(-23, 636)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox14.TabIndex = 105
+        Me.PictureBox14.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Location = New System.Drawing.Point(-13, 956)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox15.TabIndex = 106
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Location = New System.Drawing.Point(-23, 1278)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox16.TabIndex = 107
+        Me.PictureBox16.TabStop = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Location = New System.Drawing.Point(-41, 1594)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox17.TabIndex = 108
+        Me.PictureBox17.TabStop = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Location = New System.Drawing.Point(-41, 1875)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(1126, 18)
+        Me.PictureBox18.TabIndex = 109
+        Me.PictureBox18.TabStop = False
+        '
         'MenuSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -1744,12 +2024,30 @@ Partial Class MenuSelect
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1080, 1452)
+        Me.ClientSize = New System.Drawing.Size(1080, 1920)
+        Me.Controls.Add(Me.PictureBox18)
+        Me.Controls.Add(Me.PictureBox17)
+        Me.Controls.Add(Me.PictureBox16)
+        Me.Controls.Add(Me.PictureBox15)
+        Me.Controls.Add(Me.PictureBox14)
+        Me.Controls.Add(Me.PictureBox13)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel1)
@@ -1765,6 +2063,7 @@ Partial Class MenuSelect
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Button97)
         Me.Controls.Add(Me.Button98)
+        Me.Controls.Add(Me.Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -1778,6 +2077,7 @@ Partial Class MenuSelect
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
@@ -1788,6 +2088,16 @@ Partial Class MenuSelect
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1912,4 +2222,27 @@ Partial Class MenuSelect
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents PictureBox16 As PictureBox
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents PictureBox18 As PictureBox
 End Class

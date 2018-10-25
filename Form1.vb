@@ -8,6 +8,8 @@ Public Class MenuSelect
     Private Sub MenuSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized ' form will be maximized on touch screen
         Me.Size = New Size(1920, 1080)
+        PNL()
+        PLCAutomationBtns()
         MachineTendingBtns() 'text titles for Machine Tending buttons
         MaterialRemovalBtns() ' text titles for Material Removal buttons
         MaterialHandlingBtns() ' text titles for Material Handling buttons
@@ -19,8 +21,8 @@ Public Class MenuSelect
     'click functions for Machine Tending folder
     Public Sub PLCAutomation_Clks(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click, Button11.Click, Button12.Click, Button13.Click, Button14.Click, Button15.Click, Button16.Click
         Try
-            Dim OldPLCAutomation As String() = Directory.GetFiles(GlobalVariable.MTPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldPLCAutomation(15) 'makes sure Machine tending is only 16 indeces
+            Dim OldPLCAutomation As String() = Directory.GetFiles(GlobalVariable.PLCPath) 'places all paths of each file into array (including "Thumb.db"/extra files
+            ReDim Preserve OldPLCAutomation(16) 'makes sure Machine tending is only 16 indeces
             Dim PLCAutomation As String() 'creates new array to copy original without database files
             ReDim PLCAutomation(15) 'ensures new array is only 16 indeces
             FileArr(OldPLCAutomation, PLCAutomation) 'creates new arrray of file paths without extra database/thumb files
@@ -86,7 +88,7 @@ Public Class MenuSelect
     Public Sub MachineTending_Clks(sender As Object, e As EventArgs) Handles Button17.Click, Button18.Click, Button19.Click, Button20.Click, Button21.Click, Button22.Click, Button23.Click, Button24.Click, Button25.Click, Button26.Click, Button27.Click, Button28.Click, Button29.Click, Button30.Click, Button31.Click, Button32.Click
         Try
             Dim OldMachineTending As String() = Directory.GetFiles(GlobalVariable.MTPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldMachineTending(15) 'makes sure Machine tending is only 16 indeces
+            ReDim Preserve OldMachineTending(16) 'makes sure Machine tending is only 16 indeces
             Dim MachineTending As String() 'creates new array to copy original without database files
             ReDim MachineTending(15) 'ensures new array is only 16 indeces
             FileArr(OldMachineTending, MachineTending) 'creates new arrray of file paths without extra database/thumb files
@@ -152,7 +154,7 @@ Public Class MenuSelect
     Private Sub MaterialRemoval_Clks(sender As Object, e As EventArgs) Handles Button33.Click, Button34.Click, Button35.Click, Button36.Click, Button37.Click, Button38.Click, Button39.Click, Button40.Click, Button41.Click, Button42.Click, Button43.Click, Button44.Click, Button45.Click, Button46.Click, Button47.Click, Button48.Click
         Try
             Dim OldMaterialRemoval As String() = Directory.GetFiles(GlobalVariable.MRPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldMaterialRemoval(15) 'makes sure Machine tending is only 16 indeces
+            ReDim Preserve OldMaterialRemoval(16) 'makes sure Machine tending is only 16 indeces
             Dim MaterialRemoval As String() 'creates new array to copy original without database files
             ReDim MaterialRemoval(15) 'ensures new array is only 16 indeces
             FileArr(OldMaterialRemoval, MaterialRemoval) 'creates new arrray of file paths without extra database/thumb files
@@ -217,7 +219,7 @@ Public Class MenuSelect
     Private Sub MaterialHandling_Clks(sender As Object, e As EventArgs) Handles Button49.Click, Button50.Click, Button51.Click, Button52.Click, Button53.Click, Button54.Click, Button55.Click, Button56.Click, Button57.Click, Button58.Click, Button59.Click, Button60.Click, Button61.Click, Button62.Click, Button63.Click, Button64.Click
         Try
             Dim OldMaterialHandling As String() = Directory.GetFiles(GlobalVariable.MHPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldMaterialHandling(15) 'makes sure Machine tending is only 16 indeces
+            ReDim Preserve OldMaterialHandling(16) 'makes sure Machine tending is only 16 indeces
             Dim MaterialHandling As String() 'creates new array to copy original without database files
             ReDim MaterialHandling(15) 'ensures new array is only 16 indeces
             FileArr(OldMaterialHandling, MaterialHandling) 'creates new arrray of file paths without extra database/thumb files
@@ -282,7 +284,7 @@ Public Class MenuSelect
     Private Sub Assembly_Clks(sender As Object, e As EventArgs) Handles Button65.Click, Button66.Click, Button67.Click, Button68.Click, Button69.Click, Button70.Click, Button71.Click, Button72.Click, Button73.Click, Button74.Click, Button75.Click, Button76.Click, Button77.Click, Button78.Click, Button79.Click, Button80.Click
         Try
             Dim OldAssembly As String() = Directory.GetFiles(GlobalVariable.APath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldAssembly(15) 'makes sure Machine tending is only 16 indeces
+            ReDim Preserve OldAssembly(16) 'makes sure Machine tending is only 16 indeces
             Dim Assembly As String() 'creates new array to copy original without database files
             ReDim Assembly(15) 'ensures new array is only 16 indeces
             FileArr(OldAssembly, Assembly) 'creates new arrray of file paths without extra database/thumb files
@@ -347,7 +349,7 @@ Public Class MenuSelect
     Private Sub Other_Clks(sender As Object, e As EventArgs) Handles Button81.Click, Button82.Click, Button83.Click, Button84.Click, Button85.Click, Button86.Click, Button87.Click, Button88.Click, Button89.Click, Button90.Click, Button91.Click, Button92.Click, Button93.Click, Button94.Click, Button95.Click, Button96.Click
         Try
             Dim OldOther As String() = Directory.GetFiles(GlobalVariable.OTPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldOther(15)
+            ReDim Preserve OldOther(16)
             Dim Other As String() 'creates new array to copy original without database files
             ReDim Other(15)
             FileArr(OldOther, Other) 'creates new arrray of file paths without extra database/thumb files
@@ -412,13 +414,12 @@ Public Class MenuSelect
     Public Sub PLCAutomationBtns()
         Try
             Dim OldPLCAutomation As String() = Directory.GetFiles(GlobalVariable.PLCPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldPLCAutomation(15)
+            ReDim Preserve OldPLCAutomation(16)
             Dim PLCAutomation As String() 'creates new array to copy original without database files
             ReDim PLCAutomation(15)
             Dim pnl As Panel = Panel1
-            Dim p As Integer = 1
             FileArr(OldPLCAutomation, PLCAutomation) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, PLCAutomation, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, PLCAutomation) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -427,13 +428,12 @@ Public Class MenuSelect
     Public Sub MachineTendingBtns()
         Try
             Dim OldMachineTending As String() = Directory.GetFiles(GlobalVariable.MTPath) 'places all paths of each file into array (including "Thumb.db"/extra files
-            ReDim Preserve OldMachineTending(15)
+            ReDim Preserve OldMachineTending(16)
             Dim MachineTending As String() 'creates new array to copy original without database files
             ReDim MachineTending(15)
             Dim pnl As Panel = Panel2
-            Dim p As Integer = 2
             FileArr(OldMachineTending, MachineTending) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, MachineTending, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, MachineTending) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -442,13 +442,12 @@ Public Class MenuSelect
     Public Sub MaterialRemovalBtns()
         Try
             Dim OldMaterialRemoval As String() = Directory.GetFiles(GlobalVariable.MRPath) 'places all paths of each file into array
-            ReDim Preserve OldMaterialRemoval(15)
+            ReDim Preserve OldMaterialRemoval(16)
             Dim MaterialRemoval As String() 'creates new array to copy original without database files
             ReDim MaterialRemoval(15)
             Dim pnl As Panel = Panel3
-            Dim p As Integer = 3
             FileArr(OldMaterialRemoval, MaterialRemoval) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, MaterialRemoval, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, MaterialRemoval) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -457,13 +456,12 @@ Public Class MenuSelect
     Public Sub MaterialHandlingBtns()
         Try
             Dim OldMaterialHandling As String() = Directory.GetFiles(GlobalVariable.MHPath) 'places all paths of each file into array
-            ReDim Preserve OldMaterialHandling(15)
+            ReDim Preserve OldMaterialHandling(16)
             Dim MaterialHandling As String() 'creates new array to copy original without database files
             ReDim MaterialHandling(15)
             Dim pnl As Panel = Panel4
-            Dim p As Integer = 4
             FileArr(OldMaterialHandling, MaterialHandling) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, MaterialHandling, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, MaterialHandling) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -472,13 +470,12 @@ Public Class MenuSelect
     Public Sub AssemblyBtns()
         Try
             Dim OldAssembly As String() = Directory.GetFiles(GlobalVariable.APath) 'places all paths of each file into array
-            ReDim Preserve OldAssembly(15)
+            ReDim Preserve OldAssembly(16)
             Dim Assembly As String() 'creates new array to copy original without database files
             ReDim Assembly(15)
             Dim pnl As Panel = Panel5
-            Dim p As Integer = 5
             FileArr(OldAssembly, Assembly) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, Assembly, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, Assembly) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -487,13 +484,12 @@ Public Class MenuSelect
     Public Sub OtherBtns()
         Try
             Dim OldOther As String() = Directory.GetFiles(GlobalVariable.OTPath) 'places all paths of each file into array
-            ReDim Preserve OldOther(15)
+            ReDim Preserve OldOther(16)
             Dim Other As String() 'creates new array to copy original without databaes files
             ReDim Other(15)
             Dim pnl As Panel = Panel6
-            Dim p As Integer = 6
             FileArr(OldOther, Other) 'creates new arrray of file paths without extra database/thumb files
-            Eachbtn(pnl, Other, p) 'writes correct text/filename to corresponding button
+            Eachbtn(pnl, Other) 'writes correct text/filename to corresponding button
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -508,30 +504,54 @@ Public Class MenuSelect
     End Sub
     'creates new arrray of file paths without extra database/thumb files
     Public Sub FileArr(Oldarr, Newarr)
-        Dim Newindex As Integer = 0 'count to iterate through new array
-        Dim Oldindex As Integer = 0 'count to iterate through array with extra files
-        'must rewrite array of filenames because original contains extra database files
-        While Newindex < 16 And Oldindex < 16
-            If Oldarr(Oldindex) Is Nothing Then ' if the current index of file array is empty
-                Oldarr(Oldindex) = "" 'make the current index an empty string
-                Newarr(Newindex) = Oldarr(Oldindex) 'copy current file array index into new array (an empty string)
-                Newindex = Newindex + 1
-                Oldindex = Oldindex + 1
-            ElseIf Oldarr(Newindex).Contains(".db") Then 'if the current index of the old file array is a database file
-                Oldindex = Oldindex + 1 'move to the next index of old array to skip datbase file
-                Newarr(Newindex) = Oldarr(Oldindex)
-                Newindex = Newindex + 1
-                Oldindex = Oldindex + 1
-            Else
-                Newarr(Newindex) = Oldarr(Oldindex) 'assumes no file needs to be skipped
-                Newindex = Newindex + 1
-                Oldindex = Oldindex + 1
-            End If
-        End While
+        If Panel7.BackColor = Color.FromArgb(41, 44, 51) Then
+            Dim Newindex As Integer = 0 'count to iterate through new array
+            Dim Oldindex As Integer = 0 'count to iterate through array with extra files
+            'must rewrite array of filenames because original contains extra database files
+            While Newindex < 16 And Oldindex < 17
+                If Oldarr(Oldindex) Is Nothing Then ' if the current index of file array is empty
+                    Oldarr(Oldindex) = "" 'make the current index an empty string
+                    Newarr(Newindex) = Oldarr(Oldindex) 'copy current file array index into new array (an empty string)
+                    Newindex = Newindex + 1
+                    Oldindex = Oldindex + 1
+                ElseIf Oldarr(Newindex).Contains(".db") Then 'if the current index of the old file array is a database file
+                    Oldindex = Oldindex + 1 'move to the next index of old array to skip datbase file
+                    Newarr(Newindex) = Oldarr(Oldindex)
+                    Newindex = Newindex + 1
+                    Oldindex = Oldindex + 1
+                Else
+                    Newarr(Newindex) = Oldarr(Oldindex) 'assumes no file needs to be skipped
+                    Newindex = Newindex + 1
+                    Oldindex = Oldindex + 1
+                End If
+            End While
+        ElseIf Panel7.BackColor = Color.FromArgb(255, 235, 128) Then
+            Dim Newindex As Integer = 0 'count to iterate through new array
+            Dim Oldindex As Integer = 0 'count to iterate through array with extra files
+            'must rewrite array of filenames because original contains extra database files
+            While Newindex < 16 And Oldindex < 17
+                If Oldarr(Oldindex) Is Nothing Then ' if the current index of file array is empty
+                    Oldarr(Oldindex) = "" 'make the current index an empty string
+                    Oldindex = Oldindex + 1
+                ElseIf Oldarr(Oldindex).Contains("F_") Then
+                    Newarr(Newindex) = Oldarr(Oldindex) 'assumes no file needs to be skipped
+                    Newindex = Newindex + 1
+                    Oldindex = Oldindex + 1
+                Else
+                    Oldindex = Oldindex + 1
+                End If
+            End While
+            For i = 1 To 16
+                If Newarr(i) Is Nothing Then
+                    Newarr(i) = ""
+                End If
+                i = i + 1
+            Next
+        End If
 
     End Sub
     'writes correct text/filename to corresponding button
-    Public Sub Eachbtn(pnl, Newarr, p)
+    Public Sub Eachbtn(pnl, Newarr)
         Dim filename As String = "" ' defines filename as empty string
         Dim fileext As String = "" ' defines filename with its extension as empty string
         Dim filetime As String = ""
@@ -544,6 +564,9 @@ Public Class MenuSelect
                 fileext = fullPath.Split("\").Last ' stores filename with ext in fileext
                 filename = fileext.Substring(0, fileext.Length - 4) ' stores only name of file in filename
                 'filetime = FileDurationText(fullPath) 'adds duration of video to title text
+                If filename.Contains("F_") Then
+                    filename = filename.Substring(2, filename.Length - 2)
+                End If
                 btn.Text = filename '& filetime 'replaces current button with appropriate text
                 btn.Visible = True ' ensures button assigned with files are visible (important for refresh button
             End If
@@ -566,8 +589,8 @@ Public Class MenuSelect
     'finds duration of a media file (applied in FileDurationText())
     Public Function GetMediaDuration(ByVal MediaFile As String)
         Try
-            Dim w As New WMPLib.WindowsMediaPlayer
-            Dim m As WMPLib.IWMPMedia = w.newMedia(MediaFile)
+            Dim w As New WindowsMediaPlayer
+            Dim m As IWMPMedia = w.newMedia(MediaFile)
             Return m.duration 'used in FileDurationText
         Catch ex As Exception
             Return 0
@@ -587,36 +610,209 @@ Public Class MenuSelect
     Private Sub Button97_Click(sender As Object, e As EventArgs) Handles Button97.Click
 
         'rewrites all button text
-        MachineTendingBtns()
-        MaterialHandlingBtns()
-        MaterialRemovalBtns()
-        AssemblyBtns()
-        OtherBtns()
+        AllBtns()
     End Sub
 
     Private Sub PictureBox7_Click(ByVal sender As Object, ByVal e As EventArgs) Handles PictureBox7.Click
         If PictureBox7.Left = 0 Then
             Timer1.Start()
-
+            Panel7.BackColor = Color.FromArgb(255, 235, 128)
+            PLCAutomationBtns()
+            MachineTendingBtns() 'text titles for Machine Tending buttons
+            MaterialRemovalBtns() ' text titles for Material Removal buttons
+            MaterialHandlingBtns() ' text titles for Material Handling buttons
+            AssemblyBtns() ' text titles for Assembly buttons
+            OtherBtns() ' text titles for Other/Factory Automation Systems video button
         ElseIf PictureBox7.Right = 100 Then
             Timer2.Start()
-
+            Panel7.BackColor = Color.FromArgb(41, 44, 51)
+            PLCAutomationBtns()
+            MachineTendingBtns() 'text titles for Machine Tending buttons
+            MaterialRemovalBtns() ' text titles for Material Removal buttons
+            MaterialHandlingBtns() ' text titles for Material Handling buttons
+            AssemblyBtns() ' text titles for Assembly buttons
+            OtherBtns() ' text titles for Other/Factory Automation Systems video button
         End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        PictureBox7.Left += 5
+        PictureBox7.Left += 20
         If PictureBox7.Right = 100 Then
-            Panel7.BackColor = Color.FromArgb(255, 235, 128)
             Timer1.Stop()
+
         End If
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        PictureBox7.Left -= 5
+        PictureBox7.Left -= 20
         If PictureBox7.Left = 0 Then
-            Panel7.BackColor = Color.FromArgb(41, 44, 51)
             Timer2.Stop()
         End If
     End Sub
+    Public Sub AllBtns()
+        PLCAutomationBtns()
+        MachineTendingBtns() 'text titles for Machine Tending buttons
+        MaterialRemovalBtns() ' text titles for Material Removal buttons
+        MaterialHandlingBtns() ' text titles for Material Handling buttons
+        AssemblyBtns() ' text titles for Assembly buttons
+        OtherBtns() ' text titles for Other/Factory Automation Systems video button
+    End Sub
+    Public Sub PNL()
+        Panel1.VerticalScroll.Maximum = 0
+        Panel1.AutoScroll = True
+        Panel1.HorizontalScroll.Visible = False
+        Panel1.HorizontalScroll.Minimum = 0
+        Panel1.HorizontalScroll.Maximum = 1700
+
+        Panel2.VerticalScroll.Maximum = 0
+        Panel2.AutoScroll = True
+        Panel2.HorizontalScroll.Visible = False
+        Panel2.HorizontalScroll.Minimum = 0
+        Panel2.HorizontalScroll.Maximum = 1700
+
+        Panel3.VerticalScroll.Maximum = 0
+        Panel3.AutoScroll = True
+        Panel3.HorizontalScroll.Visible = False
+        Panel3.HorizontalScroll.Minimum = 0
+        Panel3.HorizontalScroll.Maximum = 1700
+
+        Panel4.VerticalScroll.Maximum = 0
+        Panel4.AutoScroll = True
+        Panel4.HorizontalScroll.Visible = False
+        Panel4.HorizontalScroll.Minimum = 0
+        Panel4.HorizontalScroll.Maximum = 1700
+
+        Panel5.VerticalScroll.Maximum = 0
+        Panel5.AutoScroll = True
+        Panel5.HorizontalScroll.Visible = False
+        Panel5.HorizontalScroll.Minimum = 0
+        Panel5.HorizontalScroll.Maximum = 1700
+
+        Panel6.VerticalScroll.Maximum = 0
+        Panel6.AutoScroll = True
+        Panel6.HorizontalScroll.Visible = False
+        Panel6.HorizontalScroll.Minimum = 0
+        Panel6.HorizontalScroll.Maximum = 1700
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+        Dim xpos As Integer = Panel1.HorizontalScroll.Value
+        If xpos > Panel1.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel1.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel1.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Dim xpos As Integer = Panel2.HorizontalScroll.Value
+        If xpos > Panel2.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel2.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel2.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Dim xpos As Integer = Panel3.HorizontalScroll.Value
+        If xpos > Panel3.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel3.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel3.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+        Dim xpos As Integer = Panel4.HorizontalScroll.Value
+        If xpos > Panel4.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel4.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel4.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+        Dim xpos As Integer = Panel5.HorizontalScroll.Value
+        If xpos > Panel5.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel5.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel5.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+        Dim xpos As Integer = Panel6.HorizontalScroll.Value
+        If xpos > Panel6.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel6.HorizontalScroll.Maximum - 850
+        Else
+            xpos += 850
+            Panel6.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+        Dim xpos As Integer = Panel1.HorizontalScroll.Value
+        If xpos > Panel1.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel1.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel1.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles Label17.Click
+        Dim xpos As Integer = Panel6.HorizontalScroll.Value
+        If xpos > Panel6.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel6.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel6.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+        Dim xpos As Integer = Panel5.HorizontalScroll.Value
+        If xpos > Panel5.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel5.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel5.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+        Dim xpos As Integer = Panel4.HorizontalScroll.Value
+        If xpos > Panel4.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel4.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel4.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+        Dim xpos As Integer = Panel3.HorizontalScroll.Value
+        If xpos > Panel3.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel3.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel3.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        Dim xpos As Integer = Panel2.HorizontalScroll.Value
+        If xpos > Panel2.HorizontalScroll.Maximum - 851 Then
+            xpos = Panel2.HorizontalScroll.Maximum - 850
+        Else
+            xpos -= 850
+            Panel2.AutoScrollPosition = New Point(xpos, 0)
+        End If
+    End Sub
+
 End Class
