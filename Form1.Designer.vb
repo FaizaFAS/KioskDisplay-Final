@@ -200,9 +200,9 @@ Partial Class MenuSelect
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(4, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(816, 56)
+        Me.Label1.Size = New System.Drawing.Size(766, 56)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "PLC Automation and Drive Systems"
+        Me.Label1.Text = "PLC Automation && Drive Systems"
         '
         'PictureBox1
         '
@@ -261,7 +261,7 @@ Partial Class MenuSelect
         Me.Label4.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label4.Font = New System.Drawing.Font("Museo Sans For Dell", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(4, 1312)
+        Me.Label4.Location = New System.Drawing.Point(4, 1308)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(238, 56)
         Me.Label4.TabIndex = 6
@@ -530,7 +530,7 @@ Partial Class MenuSelect
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox6.Location = New System.Drawing.Point(0, 1305)
+        Me.PictureBox6.Location = New System.Drawing.Point(0, 1301)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(1085, 72)
         Me.PictureBox6.TabIndex = 34
@@ -1252,22 +1252,22 @@ Partial Class MenuSelect
         'Panel5
         '
         Me.Panel5.AutoScroll = True
-        Me.Panel5.Controls.Add(Me.Button80)
-        Me.Panel5.Controls.Add(Me.Button79)
-        Me.Panel5.Controls.Add(Me.Button78)
-        Me.Panel5.Controls.Add(Me.Button77)
-        Me.Panel5.Controls.Add(Me.Button76)
-        Me.Panel5.Controls.Add(Me.Button75)
-        Me.Panel5.Controls.Add(Me.Button74)
-        Me.Panel5.Controls.Add(Me.Button73)
-        Me.Panel5.Controls.Add(Me.Button72)
-        Me.Panel5.Controls.Add(Me.Button71)
-        Me.Panel5.Controls.Add(Me.Button70)
-        Me.Panel5.Controls.Add(Me.Button69)
-        Me.Panel5.Controls.Add(Me.Button68)
         Me.Panel5.Controls.Add(Me.Button65)
         Me.Panel5.Controls.Add(Me.Button66)
         Me.Panel5.Controls.Add(Me.Button67)
+        Me.Panel5.Controls.Add(Me.Button68)
+        Me.Panel5.Controls.Add(Me.Button69)
+        Me.Panel5.Controls.Add(Me.Button70)
+        Me.Panel5.Controls.Add(Me.Button71)
+        Me.Panel5.Controls.Add(Me.Button72)
+        Me.Panel5.Controls.Add(Me.Button73)
+        Me.Panel5.Controls.Add(Me.Button74)
+        Me.Panel5.Controls.Add(Me.Button75)
+        Me.Panel5.Controls.Add(Me.Button76)
+        Me.Panel5.Controls.Add(Me.Button77)
+        Me.Panel5.Controls.Add(Me.Button78)
+        Me.Panel5.Controls.Add(Me.Button79)
+        Me.Panel5.Controls.Add(Me.Button80)
         Me.Panel5.Location = New System.Drawing.Point(7, 1377)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1070, 234)
@@ -1484,18 +1484,18 @@ Partial Class MenuSelect
         'Panel6
         '
         Me.Panel6.AutoScroll = True
-        Me.Panel6.Controls.Add(Me.Button92)
-        Me.Panel6.Controls.Add(Me.Button91)
-        Me.Panel6.Controls.Add(Me.Button90)
-        Me.Panel6.Controls.Add(Me.Button89)
-        Me.Panel6.Controls.Add(Me.Button88)
-        Me.Panel6.Controls.Add(Me.Button87)
         Me.Panel6.Controls.Add(Me.Button81)
         Me.Panel6.Controls.Add(Me.Button82)
         Me.Panel6.Controls.Add(Me.Button83)
         Me.Panel6.Controls.Add(Me.Button84)
         Me.Panel6.Controls.Add(Me.Button85)
         Me.Panel6.Controls.Add(Me.Button86)
+        Me.Panel6.Controls.Add(Me.Button87)
+        Me.Panel6.Controls.Add(Me.Button88)
+        Me.Panel6.Controls.Add(Me.Button89)
+        Me.Panel6.Controls.Add(Me.Button90)
+        Me.Panel6.Controls.Add(Me.Button91)
+        Me.Panel6.Controls.Add(Me.Button92)
         Me.Panel6.Controls.Add(Me.Button93)
         Me.Panel6.Controls.Add(Me.Button94)
         Me.Panel6.Controls.Add(Me.Button95)
@@ -1935,7 +1935,7 @@ Partial Class MenuSelect
         Me.Label14.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label14.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(1016, 1311)
+        Me.Label14.Location = New System.Drawing.Point(1016, 1307)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(50, 56)
         Me.Label14.TabIndex = 101
@@ -1947,7 +1947,7 @@ Partial Class MenuSelect
         Me.Label15.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label15.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(960, 1311)
+        Me.Label15.Location = New System.Drawing.Point(960, 1307)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(50, 56)
         Me.Label15.TabIndex = 102

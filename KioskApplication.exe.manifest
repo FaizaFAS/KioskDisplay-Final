@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="KioskApplication.exe" version="1.0.0.36" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="KioskApplication.exe" version="1.0.0.39" publicKeyToken="60039fc144c9c8a2" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="FAS Logo 900x900.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KioskApplication.exe" size="497608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KioskApplication.exe" size="497096">
       <assemblyIdentity name="KioskApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nh7GblMXrcillQZDgch+T8BMEgmujVyF5ngMQFi3cRY=</dsig:DigestValue>
+        <dsig:DigestValue>CwzQxFqgrC+7BTY7HxzosC2Wlz3eP6gEgxg/yqFel6M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -127,4 +127,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-</asmv1:assembly>
+<publisherIdentity name="CN=DOMAIN1\youf" issuerKeyHash="b47f37dce3081d497a48831d3562ec7bb7b30c9f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>B2IJkV+WAKITNu2f1ssumOPqZAdCMgbNE3ee7CMQYBk=</DigestValue></Reference></SignedInfo><SignatureValue>XkuKhdab+XlbqM1c/sbdtdcr8CXEaJwHaJGKgP/vfGAmBW/V+7ICbfPXKzehDJLHwN964EYP2rz7yTvI4xMXDfZ3iS7GPPUi3dzUgFgXpn7l5IlzXlzlwGFNIUi5XKydPIBm8eNLzzV3ImjxztZxJuj6Zeado47PS+8Byi8y9kg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wHeRzfCB7h2qxH+O7F6iy8jvGOCtbDKYxIyzuw9N0bZzYHa/JTfzJv3ZVdePfc6pZhhXIPvu775cq1UzyAoXDjae7XP/wHf7hKla3XYx989E03OfMnzmeP23Rd8qaIy02DEeoPsXGCKC0gRUdmZxaQK9uL1ynFEzPqt60esOEm8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="19601023ec9e7713cd0632420764eae3982ecbd69fed3613a200965f91096207" Description="" Url=""><as:assemblyIdentity name="KioskApplication.exe" version="1.0.0.39" publicKeyToken="60039fc144c9c8a2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DOMAIN1\youf</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MnCUUpCdaQlhzQ+QVpdHZ9MjBc0GUXn8cYLX1dcn484=</DigestValue></Reference></SignedInfo><SignatureValue>SKyJYmbOG2Ii7Q1ftmqxxMOdVH0kN25mlSuVZkhiElkuYyBmbDX+VEhQAjMr99eKWBnYDfKRuo94u+0Vsx2fUNzGF5sZZ+5hMYWC9mKgL2K597P33UV/+tZW2eQb10Y7a3mt/5jWLtmL3Sg/y3dD7fDrQ0E6wqrmlYWqqLgWkUo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wHeRzfCB7h2qxH+O7F6iy8jvGOCtbDKYxIyzuw9N0bZzYHa/JTfzJv3ZVdePfc6pZhhXIPvu775cq1UzyAoXDjae7XP/wHf7hKla3XYx989E03OfMnzmeP23Rd8qaIy02DEeoPsXGCKC0gRUdmZxaQK9uL1ynFEzPqt60esOEm8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQaOqhLgxK9LFHxH5rXax1DTANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgARABPAE0AQQBJAE4AMQBcAHkAbwB1AGYwHhcNMTgxMDE5MTMzOTI2WhcNMTkxMDE5MTkzOTI2WjAjMSEwHwYDVQQDHhgARABPAE0AQQBJAE4AMQBcAHkAbwB1AGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMB3kc3wge4dqsR/juxeosvI7xjgrWwymMSMs7sPTdG2c2B2vyU38yb92VXXj33OqWYYVyD77u++XKtVM8gKFw42nu1z/8B3+4SpWt12MffPRNNznzJ85nj9t0XfKmiMtNgxHqD7FxgigtIEVHZmcWkCvbi9cpxRMz6retHrDhJvAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAPx/WmhWUgH5dp6KylOYWdXEhZ93NjE3qVyWx5TV/AJPBqGi7JN+K57ysvsueK/Br53NfBnYjdb83nwH1anjx+iH1lJH0DW6fvNO99aPXpW3OJcKml3ADsUtzKplpBQxqlaHr8fRw7KbA6FWSYtDJoOxfqoQrZjvHxs5h0Y32j2k=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
