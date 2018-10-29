@@ -1,0 +1,66 @@
+Kiosk Display Notes
+
+Overview:
+-two forms written in Visual Basic
+-one as a menu for buttons (MenuSelect) on vertical touchscreen
+-one to play video files in Windows Media Player (VideoDisplay) on larger monitor
+- both forms load when application is open
+
+I. Form1/MenuSelect
+a. grabs paths of each folder
+- limit of 16 files per folder
+- each folder has extra database file that will be ignored 
+b. creates buttons (grouped in panels) inaccordance with files in each folder
+- file paths are in array
+- array is iterated through to assign titles and video files to each button
+- if there aren't 16 files to view, those corresponding buttons are invisible
+- clicking button plays video on second monitor in open VideoDisplay form
+c. PLC and Drive Systems may open different media type
+d. Extra buttons
+- Refresh: reloads each button in case files have been added
+- Return to Loop: stops current video and plays looped video from beginning
+- Fanuc Toggle: controls whether all files are viewed or if only file named "F_filename"
+when toggle is yellow Fanuc mode is enabled; mode is checked in code according to color of toggle
+e. Scrolling
+- each panel has Autoscroll = True enabled
+- picture boxes cover scrollbars (can't be hidden)
+- arrow buttons set scrolling location
+
+
+II.VideoDisplay
+- Load subroutine opens form on seconday monitor
+- Looped video starts when application opens
+- set to fullscreen when videos are playing
+- set to return to looping video when a video has ended
+
+III. Application Events
+- two dynamic link libraries (dll's) for Windows Media Player are not automatically referenced at runtime
+- load AxInterop.WMPLib.dll and Interop.WMPLib.dll to Project Resources
+- seperate functions reference each to be loaded when application runs
+
+IV. Global Variables
+- 5 paths for each folder that are called throughout Form1/MenuSelect.vb
+
+V. Form1/MenuSelect Designer
+a. 98 Buttons
+- 96 for content 
+- 1 for Refresh
+- 1 for Return to Loop
+b. 17 Picture Boxes
+- 6 for title banners
+- 1 for FAS Logo
+- 4 in toggle panel
+- 6 to cover scrollbars
+c. 6 Panels
+- 5 for buttons
+- 1 for Toggle
+d. 1 Timer
+- for toggle animation
+e. 17 labels
+- 5 for titles
+- 12 for scroll arrows
+
+VI. VideoDisplay Designer
+a. Windows Media Player component
+b. 1 Timer
+- tracks end of current video
