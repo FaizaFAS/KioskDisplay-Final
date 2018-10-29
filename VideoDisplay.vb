@@ -1,6 +1,7 @@
 ﻿Imports AxWMPLib
 Imports WMPLib
 Public Class VideoDisplay
+
     Private Sub VideoDisplay_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim secondaryMonitor = Screen.AllScreens.FirstOrDefault(Function(x) Not x.Primary) ' assigns secondary monitor location
         If secondaryMonitor IsNot Nothing Then ' if there is a second monitor
