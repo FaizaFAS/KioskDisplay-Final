@@ -9,15 +9,13 @@ Public Class MenuSelect
         Me.WindowState = FormWindowState.Maximized ' form will be maximized on touch screen
         Me.Size = New Size(1920, 1080) 'ensures 1080p
         PNL() 'sets scrolling parameters for each set of buttons
-        PLCAutomationBtns() 'text titles for PLC Automation and Drive Systems
-        MachineTendingBtns() 'text titles for Machine Tending buttons
-        MaterialRemovalBtns() ' text titles for Material Removal buttons
-        MaterialHandlingBtns() ' text titles for Material Handling buttons
-        AssemblyBtns() ' text titles for Assembly buttons
-        OtherBtns() ' text titles for Other/Factory Automation Systems video button
+        AllBtns() ' sets text in each buttton
         Threading.Thread.Sleep(2000) 'wait 2 seconds
         VideoDisplay.Show() 'displays Windows Media Player with looped video after 2 seconds
     End Sub
+    '
+    'CLICK COMMANDS
+    '
     'click functions forPLC Automation and Drive Systems folder
     Public Sub PLCAutomation_Clks(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click, Button11.Click, Button12.Click, Button13.Click, Button14.Click, Button15.Click, Button16.Click
         Try
@@ -410,7 +408,28 @@ Public Class MenuSelect
             MessageBox.Show(ex.Message)
         End Try
     End Sub
-    'applies appropriate filenames to button titles from Machine Tending Folder
+    'Return Loop Button
+    Private Sub Button98_Click(sender As Object, e As EventArgs) Handles Button98.Click
+        ReturnLoop()
+    End Sub
+    'Refresh button
+    Private Sub Button97_Click(sender As Object, e As EventArgs) Handles Button97.Click
+        'rewrites all button text
+        AllBtns()
+    End Sub
+    '
+    'LOADING BUTTONS
+    '
+    'All button appearances except Refresh and Return to Loop
+    Public Sub AllBtns()
+        PLCAutomationBtns() 'text titles for PLC folder
+        MachineTendingBtns() 'text titles for Machine Tending buttons
+        MaterialRemovalBtns() ' text titles for Material Removal buttons
+        MaterialHandlingBtns() ' text titles for Material Handling buttons
+        AssemblyBtns() ' text titles for Assembly buttons
+        OtherBtns() ' text titles for Other/Factory Automation Systems video button
+    End Sub
+    'applies appropriate filenames to button titles from PLC Folder
     Public Sub PLCAutomationBtns()
         Try
             Dim OldPLCAutomation As String() = Directory.GetFiles(GlobalVariable.PLCPath) 'places all paths of each file into array (including "Thumb.db"/extra files
@@ -494,14 +513,7 @@ Public Class MenuSelect
             MessageBox.Show(ex.Message)
         End Try
     End Sub
-    'assigns video address, plays in fullscreen, and plays when button is clicked
-    Public Sub PlayVideo(filename)
-        VideoDisplay.AxWindowsMediaPlayer1.settings.setMode("loop", False)
-        If filename IsNot "" Then ' if there is a file assigned to this button
-            VideoDisplay.AxWindowsMediaPlayer1.URL = filename ' the windows media player url is of that file
-        End If
-        VideoDisplay.AxWindowsMediaPlayer1.Ctlcontrols.play() 'play the video when button is clicked
-    End Sub
+
     'creates new arrray of file paths without extra database/thumb files
     Public Sub FileArr(Oldarr, Newarr)
         If Toggle.BackColor = Color.FromArgb(31, 58, 147) Then
@@ -580,10 +592,7 @@ Public Class MenuSelect
             i = i + 1
         Next
     End Sub
-    'Return Loop Button
-    Private Sub Button98_Click(sender As Object, e As EventArgs) Handles Button98.Click
-        ReturnLoop()
-    End Sub
+
     'finds duration of files in minutes and seconds (mm:ss) NOT CALLED/ENABLED
     Public Function FileDurationText(filename)
         Dim Vidhhmmss As String = TimeSpan.FromSeconds(Math.Round(GetMediaDuration(filename))).ToString ' hh:mm:ss duration
@@ -613,12 +622,9 @@ Public Class MenuSelect
             MessageBox.Show(ex.Message)
         End Try
     End Sub
-    'Refresh button
-    Private Sub Button97_Click(sender As Object, e As EventArgs) Handles Button97.Click
-        'rewrites all button text
-        AllBtns()
-    End Sub
-    'Fanuc Toggle switch
+    '
+    'FANUC TOGGLE SWITCH
+    '
     Private Sub PictureBox7_Click(ByVal sender As Object, ByVal e As EventArgs) Handles PictureBox7.Click
         If PictureBox7.Left = 0 Then 'starts toggle assuming scrreen is moving from default to Fanuc mode
             Timer1.Start() 'continues animation
@@ -655,22 +661,16 @@ Public Class MenuSelect
             Timer2.Stop()
         End If
     End Sub
-    'All button appearances except Refresh and Return to Loop
-    Public Sub AllBtns()
-        PLCAutomationBtns() 'text titles for PLC folder
-        MachineTendingBtns() 'text titles for Machine Tending buttons
-        MaterialRemovalBtns() ' text titles for Material Removal buttons
-        MaterialHandlingBtns() ' text titles for Material Handling buttons
-        AssemblyBtns() ' text titles for Assembly buttons
-        OtherBtns() ' text titles for Other/Factory Automation Systems video button
-    End Sub
+    '
+    'SCROLLING
+    '
     'sets scrolling parameters
     Public Sub PNL()
-        Panel1.VerticalScroll.Maximum = 0
+        Panel1.VerticalScroll.Maximum = 0 ' hides vertical scrollbar
         Panel1.AutoScroll = True
         Panel1.HorizontalScroll.Visible = False
-        Panel1.HorizontalScroll.Minimum = 0
-        Panel1.HorizontalScroll.Maximum = 1700
+        Panel1.HorizontalScroll.Minimum = 0    'dimensions for
+        Panel1.HorizontalScroll.Maximum = 1700 'scrolling 
 
         Panel2.VerticalScroll.Maximum = 0
         Panel2.AutoScroll = True
@@ -700,7 +700,7 @@ Public Class MenuSelect
         Panel6.AutoScroll = True
         Panel6.HorizontalScroll.Visible = False
         Panel6.HorizontalScroll.Minimum = 0
-        Panel6.HorizontalScroll.Maximum = 2190
+        Panel6.HorizontalScroll.Maximum = 2190 'larger than other panels
     End Sub
     '
     'Click commands for right scrolling buttons
@@ -826,19 +826,24 @@ Public Class MenuSelect
             Panel2.AutoScrollPosition = New Point(xpos, 0)
         End If
     End Sub
-
+    '
+    'OPENS POWERPOINT/WINDOWS MEDIA PLAYER
+    '
     Public Sub PowerPoint(file)
         VideoDisplay.Hide()
-        Dim secondaryMonitor = Screen.AllScreens.FirstOrDefault(Function(x) Not x.Primary) ' assigns secondary monitor location
-        If secondaryMonitor IsNot Nothing Then ' if there is a second motnitor
-            Dim newLocation = secondaryMonitor.Bounds.Location 'sets boundaries for monitor
-            newLocation.Offset(100, 100)
-            Me.Location = newLocation 'assigns monitor to this form
-        End If
-        Dim myProcess = Process.Start("powerpnt", "/s """ & file & """")
+        Dim myProcess = Process.Start("powerpnt", "/s""" & file & """")
         Dim p = Process.GetProcessesByName("powerpnt")
         If p.Length = 1 Then
             VideoDisplay.Show()
         End If
     End Sub
+    'assigns video address, plays in fullscreen, and plays when button is clicked
+    Public Sub PlayVideo(filename)
+        VideoDisplay.AxWindowsMediaPlayer1.settings.setMode("loop", False)
+        If filename IsNot "" Then ' if there is a file assigned to this button
+            VideoDisplay.AxWindowsMediaPlayer1.URL = filename ' the windows media player url is of that file
+        End If
+        VideoDisplay.AxWindowsMediaPlayer1.Ctlcontrols.play() 'play the video when button is clicked
+    End Sub
+
 End Class

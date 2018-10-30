@@ -33,22 +33,22 @@ Partial Class MenuSelect
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -312,187 +312,19 @@ Partial Class MenuSelect
         Me.Panel1.Size = New System.Drawing.Size(1070, 234)
         Me.Panel1.TabIndex = 32
         '
-        'Button16
+        'Button1
         '
-        Me.Button16.BackColor = System.Drawing.Color.White
-        Me.Button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button16.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.ForeColor = System.Drawing.Color.Black
-        Me.Button16.Location = New System.Drawing.Point(1320, 3)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(266, 70)
-        Me.Button16.TabIndex = 15
-        Me.Button16.Text = "Button16"
-        Me.Button16.UseVisualStyleBackColor = False
-        '
-        'Button15
-        '
-        Me.Button15.BackColor = System.Drawing.Color.White
-        Me.Button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button15.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.ForeColor = System.Drawing.Color.Black
-        Me.Button15.Location = New System.Drawing.Point(1056, 147)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(266, 70)
-        Me.Button15.TabIndex = 16
-        Me.Button15.Text = "Button15"
-        Me.Button15.UseVisualStyleBackColor = False
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.White
-        Me.Button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button14.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.ForeColor = System.Drawing.Color.Black
-        Me.Button14.Location = New System.Drawing.Point(1056, 75)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(266, 70)
-        Me.Button14.TabIndex = 17
-        Me.Button14.Text = "Button14"
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Button13
-        '
-        Me.Button13.BackColor = System.Drawing.Color.White
-        Me.Button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button13.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.ForeColor = System.Drawing.Color.Black
-        Me.Button13.Location = New System.Drawing.Point(1056, 3)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(266, 70)
-        Me.Button13.TabIndex = 18
-        Me.Button13.Text = "Button13"
-        Me.Button13.UseVisualStyleBackColor = False
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.Color.White
-        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button12.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.Color.Black
-        Me.Button12.Location = New System.Drawing.Point(792, 147)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(266, 70)
-        Me.Button12.TabIndex = 19
-        Me.Button12.Text = "Button12"
-        Me.Button12.UseVisualStyleBackColor = False
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.Color.White
-        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.ForeColor = System.Drawing.Color.Black
-        Me.Button11.Location = New System.Drawing.Point(792, 75)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(266, 70)
-        Me.Button11.TabIndex = 20
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.White
-        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button10.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.ForeColor = System.Drawing.Color.Black
-        Me.Button10.Location = New System.Drawing.Point(792, 3)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(266, 70)
-        Me.Button10.TabIndex = 21
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.White
-        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button9.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.ForeColor = System.Drawing.Color.Black
-        Me.Button9.Location = New System.Drawing.Point(528, 147)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(266, 70)
-        Me.Button9.TabIndex = 22
-        Me.Button9.Text = "Button9"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.White
-        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button8.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.Black
-        Me.Button8.Location = New System.Drawing.Point(528, 75)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(266, 70)
-        Me.Button8.TabIndex = 23
-        Me.Button8.Text = "Button8"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.White
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button7.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.Black
-        Me.Button7.Location = New System.Drawing.Point(528, 3)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(266, 70)
-        Me.Button7.TabIndex = 24
-        Me.Button7.Text = "Button7"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.White
-        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button6.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.Black
-        Me.Button6.Location = New System.Drawing.Point(264, 147)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(266, 70)
-        Me.Button6.TabIndex = 25
-        Me.Button6.Text = "Button6"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.White
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button5.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Black
-        Me.Button5.Location = New System.Drawing.Point(264, 75)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(266, 70)
-        Me.Button5.TabIndex = 26
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button4.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(264, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(266, 70)
-        Me.Button4.TabIndex = 27
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
-        Me.Button3.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(0, 147)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(266, 70)
-        Me.Button3.TabIndex = 28
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame
+        Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(0, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(266, 70)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -507,19 +339,187 @@ Partial Class MenuSelect
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame
-        Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(0, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(266, 70)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button3.BackColor = System.Drawing.Color.White
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button3.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.Location = New System.Drawing.Point(0, 147)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(266, 70)
+        Me.Button3.TabIndex = 28
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button4.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Black
+        Me.Button4.Location = New System.Drawing.Point(264, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(266, 70)
+        Me.Button4.TabIndex = 27
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button5.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Black
+        Me.Button5.Location = New System.Drawing.Point(264, 75)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(266, 70)
+        Me.Button5.TabIndex = 26
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button6.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.Black
+        Me.Button6.Location = New System.Drawing.Point(264, 147)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(266, 70)
+        Me.Button6.TabIndex = 25
+        Me.Button6.Text = "Button6"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.White
+        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button7.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.Black
+        Me.Button7.Location = New System.Drawing.Point(528, 3)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(266, 70)
+        Me.Button7.TabIndex = 24
+        Me.Button7.Text = "Button7"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button8.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.Black
+        Me.Button8.Location = New System.Drawing.Point(528, 75)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(266, 70)
+        Me.Button8.TabIndex = 23
+        Me.Button8.Text = "Button8"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.White
+        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button9.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.Black
+        Me.Button9.Location = New System.Drawing.Point(528, 147)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(266, 70)
+        Me.Button9.TabIndex = 22
+        Me.Button9.Text = "Button9"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.White
+        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button10.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.Color.Black
+        Me.Button10.Location = New System.Drawing.Point(792, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(266, 70)
+        Me.Button10.TabIndex = 21
+        Me.Button10.Text = "Button10"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.White
+        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.Color.Black
+        Me.Button11.Location = New System.Drawing.Point(792, 75)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(266, 70)
+        Me.Button11.TabIndex = 20
+        Me.Button11.Text = "Button11"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.White
+        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button12.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.ForeColor = System.Drawing.Color.Black
+        Me.Button12.Location = New System.Drawing.Point(792, 147)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(266, 70)
+        Me.Button12.TabIndex = 19
+        Me.Button12.Text = "Button12"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.White
+        Me.Button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button13.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.ForeColor = System.Drawing.Color.Black
+        Me.Button13.Location = New System.Drawing.Point(1056, 3)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(266, 70)
+        Me.Button13.TabIndex = 18
+        Me.Button13.Text = "Button13"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.White
+        Me.Button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button14.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.Color.Black
+        Me.Button14.Location = New System.Drawing.Point(1056, 75)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(266, 70)
+        Me.Button14.TabIndex = 17
+        Me.Button14.Text = "Button14"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.White
+        Me.Button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button15.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button15.ForeColor = System.Drawing.Color.Black
+        Me.Button15.Location = New System.Drawing.Point(1056, 147)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(266, 70)
+        Me.Button15.TabIndex = 16
+        Me.Button15.Text = "Button15"
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button16
+        '
+        Me.Button16.BackColor = System.Drawing.Color.White
+        Me.Button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.Button16.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button16.ForeColor = System.Drawing.Color.Black
+        Me.Button16.Location = New System.Drawing.Point(1320, 3)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(266, 70)
+        Me.Button16.TabIndex = 15
+        Me.Button16.Text = "Button16"
+        Me.Button16.UseVisualStyleBackColor = False
         '
         'PictureBox13
         '
